@@ -8,10 +8,12 @@ header, footer {
     height: 50px;
 }
 
+/* 用来包裹3栏,并通过padding腾出左右两栏的宽度 */
 .content {
     padding: 0 150px;
 }
 
+/* 为3栏清除浮动,保证Footer正确显示 */
 .content:after {
     display: block;
     content: ".";
@@ -19,17 +21,19 @@ header, footer {
     clear: both;
 }
 
+/* 三栏均浮动起来,使得左右两栏可通过负margin拉到与中栏同一行 */
 .main, .left, .right {
     float: left;
 }
 
+/* 中栏占据100%宽度.注意是content内容的100%宽度 */
 .main {
     background-color: aqua;
     height: 150px;
     width: 100%;
-    box-sizing: border-box;
 }
 
+/* 左栏通过负100%左边距拉倒与中栏同一行,左边框与content内容左边界重合.然后通过相对定位+负left移动到与body内容左边界重合 */
 .left {
     background-color: aquamarine;
     width: 150px;
@@ -39,6 +43,7 @@ header, footer {
     left: -150px;
 }
 
+/* 右栏通过负宽度左边距拉倒与中栏同一行,右边框与content内容右边界重合.然后通过相对定位+负right移动到与body内容右边界重合 */
 .right {
     background-color: burlywood;
     width: 150px;

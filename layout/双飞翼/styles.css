@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: darkgray;
+    height: 50px;
+}
+
+/* 为3栏清除浮动,保证Footer正确显示 */
+.content:after {
+    display: block;
+    content: ".";
+    height: 0;
+    clear: both;
+}
+
+/* 三栏均浮动起来,使得左右两栏可通过负margin拉到与中栏同一行 */
+.main-wrapper, .left, .right {
+    float: left;
+}
+
+/* main-wrapper占据整行 */
+.main-wrapper {
+    width: 100%;
+}
+
+/* main通过左右margin,为左右两栏腾出空间 */
+.main {
+    background-color: aqua;
+    height: 150px;
+    margin: 0 150px;
+}
+
+/* 左栏通过负100%左边距拉倒与中栏同一行,左边框与body内容左边界重合 */
+.left {
+    background-color: aquamarine;
+    width: 150px;
+    height: 80px;
+    margin-left: -100%;
+}
+
+/* 右栏通过负宽度左边距拉倒与中栏同一行,右边框与body内容右边界重合 */
+.right {
+    background-color: burlywood;
+    width: 150px;
+    height: 100px;
+    margin-left: -150px;
+}
