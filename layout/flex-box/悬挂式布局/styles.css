@@ -32,7 +32,7 @@ body {
     margin-bottom: 10px;
 }
 
-.col-2 {
+.posts.col-2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

@@ -14,13 +14,13 @@
 }
 
 .left {
-    width: 150px;
+    flex: 0 0 150px;
 
     background-color: aquamarine;
 }
 
 .right {
-    width: 150px;
+    flex: 0 0 150px;
 
     background-color: burlywood;
 }
