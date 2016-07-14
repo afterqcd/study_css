@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5px;
+
+    color: #646362;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #F5F4F1;
+    border-radius: 3px;
+}
+
+.post .author-figure {
+    width: 64px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.post .body {
+    flex: 1;
+}
+
+.post .body h2 {
+    margin-bottom: 10px;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-2 .post {
+    width: 49%;
+    box-sizing: border-box;
+}

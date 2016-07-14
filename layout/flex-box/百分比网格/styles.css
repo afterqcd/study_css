@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+
+    background-color: #e9e9e9;
+    border: 7px solid white;
+}
+
+.cell.u-1of2 {
+    flex: 0 0 50%;
+}
+
+.cell.u-1of3 {
+    flex: 0 0 33.3333%;
+}
+
+.cell.u-1of4 {
+    flex: 0 0 25%;
+}
+
+h2, p {
+    padding: .25em;
+}
+
+h2 {
+    text-align: center;
+}

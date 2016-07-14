@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.main {
+    flex: 1;
+
+    background-color: aqua;
+}
+
+.left {
+    width: 150px;
+
+    background-color: aquamarine;
+}
+
+.right {
+    width: 150px;
+
+    background-color: burlywood;
+}
+
+header, footer {
+    background-color: darkgray;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2, p {
+    padding: .25em;
+}
